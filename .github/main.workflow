@@ -1,4 +1,4 @@
-workflow "Check for GIPHT on Push" {
+workflow "Check for GIPHT on issue_comment" {
   on = "issue_comment"
   resolves = "GIPHT"
 }
