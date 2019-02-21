@@ -5,5 +5,8 @@ workflow "Check for GIPHT on issue_comment" {
 
 action "GIPHT" {
   uses = "bdougie/faint-pull@master"
-  secrets = ["GITHUB_TOKEN"]
+  secrets = [
+    "GITHUB_TOKEN",
+    "GIPHY_KEY",
+  ]
 }
